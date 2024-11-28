@@ -54,8 +54,9 @@
 
     <input class="input is-normal input-name is-fullwidth" placeholder="Nameー名前" id="Name">
     <input class="input is-normal input-ws is-fullwidth" placeholder="Work stationー工程ー機械ー場所" id="WS">
-    <input class="input is-normal is-warning input-Number" placeholder="Number-数量" id="Number-code">
     <input class="input is-rounded is-large input-code is-fullwidth" placeholder="Codeー図面コード" id="code">
+    <input class="input is-normal is-warning input-Number" placeholder="Number-数量" id="Number-code">
+
     <div class="field is-horizontal">
         <div class="field-label is-normal">
             <label class="label">不良/不足数</label>
@@ -108,7 +109,7 @@
                 alert("QRコードを入力してください-Hãy nhập mã hàng");
                 return false;
             }
-            const API_URL = "https://script.google.com/macros/s/AKfycbxX3QhG_BgJwGFYgncs2EngwxsK03B3UkMqZjlWRSErDp3sSsHqqGfNz0dvGA25YHnIYQ/exec";
+            const API_URL = "https://script.google.com/macros/s/AKfycbxO7s0bp3I746PVpSD8ycVZ--Z_M0TDu5JS4UjgEeGqauH9sQgXmgAI5kcQkX9HFtGneQ/exec";
             const options = {
                 method: 'POST',
                 contentType: 'application/json',
@@ -141,7 +142,7 @@
 
         function onScanSuccess(qrCodeMessage) {
             html5QrCode.stop();
-            const API_URL = "https://script.google.com/macros/s/AKfycbxX3QhG_BgJwGFYgncs2EngwxsK03B3UkMqZjlWRSErDp3sSsHqqGfNz0dvGA25YHnIYQ/exec";
+            const API_URL = "https://script.google.com/macros/s/AKfycbxO7s0bp3I746PVpSD8ycVZ--Z_M0TDu5JS4UjgEeGqauH9sQgXmgAI5kcQkX9HFtGneQ/exec";
             const options = {
                 method: 'POST',
                 contentType: 'application/json',
